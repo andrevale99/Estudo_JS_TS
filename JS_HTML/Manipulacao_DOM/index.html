@@ -92,6 +92,57 @@
         </ol>
     </div>
 
+    <hr>
+
+    <div>
+        <h3>Alguns comandos de navegaçao</h3>
+        <p>
+            podemos acessar os elementos filhos de um elemento pai a partir de 
+            algumas propriedades, dentre elas:
+        </p>
+
+        <ol>
+            <li>
+                <strong>document.querySelector('p').parentNode</strong>:
+                <p>
+                    Retorna o elemento pai do seletor.
+                </p>
+            </li>
+
+            <li>
+                <strong>document.querySelector('body').childNodes</strong>:
+                <p>
+                    Retorna a lista com todos os nós filhos do seletor. Também 
+                    retornar alguns Nós de texto que são relacionados a formatação,
+                    tabulação, dentre outros.
+                </p>
+            </li>
+
+            <li>
+                <strong>document.querySelector('body').children</strong>:
+                <p>
+                    Caso não queira retornar os Nós de texto, utiliza-se essa função
+                    que retorna somente os elementos HTML (div, p, h2, dentre outros).
+                </p>
+            </li>
+
+            <p>
+                Também a outras propriedades: "<strong>nextSibling</strong> 
+                e <strong>previousSibling</strong>, que representam, 
+                respectivamente, o próximo e o anterior irmão do nó em questão"; "
+                Caso queiramos filtrar somente elementos HTML, usamos as propriedades 
+                <strong>nextElementSibling</strong> e <strong>previousElementSibling</strong> ."
+                (IMD, Aula 05 - Manipulação do DOM)
+            </p>
+            <div class="codes">
+                const teste = document.querySelector('#item').children[1]; <br>
+                // Acessando o segundo filho do elemento de id 'item'
+                teste.nextElementSibling.style.background = 'orange'; <br>
+                // Mudando a cor de background do próximo irmão do elemento de id 'item'
+            </div>
+        </ol>
+    </div>
+
 </body>
 
 </html>
