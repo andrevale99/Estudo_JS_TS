@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="dom.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <title>Manipulação de DOM</title>
+    </head>
+    
+    <body>
+        
+        <div id="acesso_elementos">
+            <h3>Acesso de elementos DOM</h3>
+
+            <p>
+                Há comandos de acesso aos elementos HTML utilizando o javascript,
+                alguns serão mostrados a seguir.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>document.getElementById()</strong>:
+                    <p id="exemplo_1">
+                        Maneira de acessar algum elemento a partir de sua <b>id</b>,
+                        digitando a linha abaixo no console co navegador irá 
+                        retorna o objeto deste parágrafo (tudo). Já o segundo irá
+                        retornar este texto.
+                    </p>
+                    <div class="codes">
+                        document.getElementById('exemplo_1')
+                        document.getElementById('exemplo_1').textContent
+                    </div>
+                </li>
+
+                <li>
+                    <strong>document.getElementsByClassName()</strong>:
+                    <p>
+                        Irá retornar o mesmo exemplo anterior, porém de vez utilizar 
+                        a ID, deve-se utilizar a CLASS da tag. O exemplo irá retornar
+                        todos os elementos que utiliza da classe CSS de "codes".
+                    </p>
+                    <div class="codes">
+                        document.getElementsByClassName('codes')
+                    </div>
+                </li>
+            </ol>
+        </div>
+    
+    </body>
+</html>
