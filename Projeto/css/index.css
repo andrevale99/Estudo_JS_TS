@@ -1,0 +1,106 @@
+html
+{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+
+    border: 2px solid black;
+}
+
+a:hover
+{
+    font-size: 0.85cm;
+}
+
+header
+{
+    display: flex;
+    flex: 1;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border: 2px solid rgb(185, 185, 255);
+    border-radius: 10px;
+    background-color: rgb(185, 185, 255);
+}
+
+header > div
+{
+    text-align: center;
+    font-size: 0.75cm;
+    margin: 10px;
+    padding: 2px;
+}
+
+.grow_1
+{
+    flex-grow: 1;
+}
+
+#reserva
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#cidade 
+{
+    padding: 5px;
+    width: 5cm;
+
+    flex-grow: 1;
+}
+
+#data
+{
+    padding: 5px;
+    width: 4cm;
+
+    text-align: center;
+
+    flex-grow: 1;
+}
+
+#horario
+{
+    padding: 5px;
+
+    flex-grow: 1;
+}
+
+input[type=text]:hover
+{
+    background-color: rgb(185, 185, 255);
+}
+
+input[type=date]:hover
+{
+    background-color: rgb(185, 185, 255);
+}
+
+input[type=time]:hover
+{
+    background-color: rgb(185, 185, 255);
+}
+
+#submit
+{
+    padding: 5px;
+    width: 3cm;
+
+    flex-grow: 2;
+}
+
+#info_reserva
+{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+footer
+{
+    border: 2px solid black;
+    padding: 5px;
+}
