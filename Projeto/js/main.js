@@ -1,22 +1,36 @@
+var reserva_input = {
+    cidade: null,
+    data : null,
+    horario : null
+}
+
 $(document).ready(function()
 {
     var Locadora = {
         reserva : [
-            {marca : "fiat", tipo : "sedan"},
-            {marca : "chevrolett", tipo : "sedan"},
-            {marca : "hyundai", tipo : "sedan"},
-            {marca : "toyota", tipo : "suv"}
+            {marca : "fiat", tipo : "sedan", data : Date() ,reservado : false},
+            {marca : "chevrolett", tipo : "sedan", data : Date() ,reservado : false},
+            {marca : "hyundai", tipo : "sedan", data : Date() ,reservado : false},
+            {marca : "toyota", tipo : "suv",  data : Date(),reservado : false}
         ]
     }
 
     $('#submit').on({
-        click: function() {submit_pressed()}
+        click: function()
+        {
+            get_input();
+        }
     })
 
-    function submit_pressed()
+    function get_input()
     {
-        console.log("PRESSED");
+        reserva_input.cidade = $("#cidade_input").val();
+        reserva_input.data =  $("#data_input").val();
+        reserva_input.horario = $("#horario_input").val();
+        
+        console.log(reserva_input);
     }
+
 });
 
 
