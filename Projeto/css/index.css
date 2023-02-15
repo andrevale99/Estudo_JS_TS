@@ -47,50 +47,72 @@ header > div
 
 #cidade 
 {
-    padding: 5px;
+    padding: 10px;
     width: 5cm;
 
     flex-grow: 1;
+
+    border-radius: 10px;
 }
 
 #data
 {
-    padding: 5px;
+    padding: 10px;
     width: 4cm;
+
+    
 
     text-align: center;
 
     flex-grow: 1;
+
+    border-radius: 10px;
 }
 
 #horario
 {
-    padding: 5px;
+    padding: 10px;
 
     flex-grow: 1;
+
+    border-radius: 10px;
 }
 
 input[type=text]:hover
 {
     background-color: rgb(185, 185, 255);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 5px  black; 
 }
 
 input[type=date]:hover
 {
     background-color: rgb(185, 185, 255);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 5px  black; 
 }
 
 input[type=time]:hover
 {
     background-color: rgb(185, 185, 255);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 5px  black; 
 }
 
 #submit
 {
-    padding: 5px;
+    padding: 10px;
     width: 3cm;
 
+    border-radius: 10px;
+
     flex-grow: 2;
+}
+
+#submit:hover
+{
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 5px  black;
 }
 
 #info_reserva
@@ -102,5 +124,20 @@ input[type=time]:hover
 footer
 {
     border: 2px solid black;
+    padding: 5px;
+}
+
+#painel_reserva
+{
+    border: 5px solid black;
+}
+
+#marca
+{
+    padding: 5px;
+}
+
+#tipo
+{
     padding: 5px;
 }
